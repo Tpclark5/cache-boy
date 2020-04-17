@@ -1,0 +1,12 @@
+﻿@model cache_boy.Models.CoffeeModel.AddCoffeeViewModel
+
+<form asp-action="PostCoffee" asp-controller="Coffee">
+
+    <div>
+        <label asp-for="Name"></label>
+        <input asp-for="Name"/>
+
+        <input type="submit" value="Add Coffee!"/>
+    </div>
+
+</form>

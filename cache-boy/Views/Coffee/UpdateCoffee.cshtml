@@ -1,0 +1,26 @@
+﻿@model cache_boy.Models.CoffeeModel.UpdateCoffeeViewModel
+
+<h1>Changing The name for @Model.OldName</h1>
+<form asp--action="UpdatedCoffee" asp-controller="Coffee">
+
+    <div>
+        <label asp-for="NewName"></label>
+        <input asp-for="NewName" />
+    </div>
+
+    <div>
+      <label asp-for="Description"></label>
+        <input asp-for="Description" />
+    </div>
+
+        <div>
+        <label asp-for="Price"></label>
+        <input asp-for="Price" />
+    </div>
+
+
+
+    <input asp-for="OldName" type="hidden"disabled />
+    <input asp-for="Id" type="hidden"disabled />
+
+</form>

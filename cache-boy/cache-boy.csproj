@@ -1,0 +1,12 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>cache_boy</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="C:\Users\tpcla\Desktop\LAB21_22\coffeestuff\CoffeeController.cs" Link="CoffeeController.cs" />
+  </ItemGroup>
+
+</Project>

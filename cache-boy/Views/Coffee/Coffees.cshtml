@@ -1,0 +1,31 @@
+﻿@model cache_boy.Models.CoffeeModel.CoffeesViewModel
+
+<div>
+    <h2>Check out THESE Coffees!</h2>
+</div>
+
+<ul>
+    @foreach (var coffee in Model.Coffees)//we are looping over all the coffees and then taking the user to the page to do the action
+    {
+        <li>
+            <div>
+                <h4>@coffee</h4>
+                <a asp-action="DeleteCoffee"
+                   asp-controller="Coffee"
+                   asp-route-coffeeName="@coffee">
+                    Delete
+                </a>
+                <a asp-action="UpdateCoffee"
+                   asp-controller="Coffee"
+                   asp-route-coffeeName="@coffee">
+                    Change Name
+                </a>
+            </div>
+        </li>
+    }
+</ul>
+
+
+<button>
+    <a asp-action="AddCoffee" asp-controller="Coffee">Add Coffee</a>
+</button>
